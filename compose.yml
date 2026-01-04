@@ -1,0 +1,10 @@
+services:
+  hosting:
+    container_name: nginxog
+    image: cab456cf59ca
+    ports:
+    - "32768:80"
+    volumes:
+    - nginx_data:/data
+volumes:
+  nginx_data:
